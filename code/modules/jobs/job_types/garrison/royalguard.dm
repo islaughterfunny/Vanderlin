@@ -46,19 +46,20 @@
 
 /datum/outfit/job/royalguard/pre_equip(mob/living/carbon/human/H)
 	..()
-	pants = /obj/item/clothing/pants/chainlegs
+	pants = /obj/item/clothing/pants/platelegs
 	cloak = /obj/item/clothing/cloak/tabard/knight/guard
-	neck = /obj/item/clothing/neck/gorget
+	neck = /obj/item/clothing/neck/chaincoif
 	shirt = /obj/item/clothing/armor/gambeson/arming
 	armor = /obj/item/clothing/armor/brigandine // Wear the King's colors.
-	shoes = /obj/item/clothing/shoes/boots/armor/light
+	shoes = /obj/item/clothing/shoes/boots/armor
 	beltl = /obj/item/storage/keyring/manorguard
 	belt = /obj/item/storage/belt/leather
 	beltr = /obj/item/weapon/sword/arming
 	backr = /obj/item/storage/backpack/satchel
 	backl = /obj/item/weapon/shield/tower/metal
 	r_hand = /obj/item/weapon/polearm/halberd
-	gloves = /obj/item/clothing/gloves/chain
+	wrists = /obj/item/clothing/wrists/bracers
+	gloves = /obj/item/clothing/gloves/plate
 	head = /obj/item/clothing/head/helmet/visored/knight
 
 	if(H.mind)
@@ -66,21 +67,22 @@
 		H.mind?.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/wrestling, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/unarmed, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 2, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/swords, 5, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/polearms, 5, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/axesmaces, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/combat/shields, 4, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 3, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/climbing, 2, TRUE)
-		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 4, TRUE)
+		H.mind?.adjust_skillrank(/datum/skill/misc/athletics, 5, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/reading, 1, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/misc/riding, 3, TRUE)
 		H.mind?.adjust_skillrank(/datum/skill/labor/mathematics, 3, TRUE)
-		H.change_stat(STATKEY_STR, 2)
+		H.change_stat(STATKEY_STR, 3)
 		H.change_stat(STATKEY_PER, 2)
-		H.change_stat(STATKEY_END, 2)
-		H.change_stat(STATKEY_CON, 1)
+		H.change_stat(STATKEY_END, 3)
+		H.change_stat(STATKEY_CON, 2)
+		H.change_stat(STATKEY_INT, 1)
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
