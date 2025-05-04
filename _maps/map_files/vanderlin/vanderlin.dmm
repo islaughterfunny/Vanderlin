@@ -4085,13 +4085,8 @@
 /area/rogue/outdoors/town)
 "ctI" = (
 /obj/structure/closet/crate/chest/neu_iron,
-/obj/item/key/manor,
 /obj/item/key/walls,
 /obj/item/key/blacksmith,
-/obj/item/key/steward{
-	pixel_x = 5;
-	pixel_y = 15
-	},
 /obj/item/key/church{
 	pixel_x = -4;
 	pixel_y = 7
@@ -4124,6 +4119,19 @@
 	pixel_y = 3
 	},
 /obj/item/key/tailor,
+/obj/item/key/apothecary,
+/obj/item/key/archive,
+/obj/item/key/artificer,
+/obj/item/key/atarms,
+/obj/item/key/bathhouse,
+/obj/item/key/butcher,
+/obj/item/key/clinic,
+/obj/item/key/forrestgarrison,
+/obj/item/key/guest,
+/obj/item/key/mage,
+/obj/item/key/matron,
+/obj/item/key/miner,
+/obj/item/key/tower,
 /turf/open/floor/carpet/green,
 /area/rogue/indoors/town/steward)
 "cuc" = (
@@ -23555,6 +23563,11 @@
 	pixel_y = 4;
 	pixel_z = null
 	},
+/obj/item/key/custom,
+/obj/item/key/custom,
+/obj/item/storage/belt/pouch,
+/obj/item/storage/belt/pouch,
+/obj/item/storage/sack,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/steward)
 "pfV" = (
@@ -28495,6 +28508,12 @@
 /obj/item/key/apartments/apartment3,
 /obj/item/key/apartments/apartment2,
 /obj/item/key/apartments/apartment1,
+/obj/item/key/apartments/slums1,
+/obj/item/key/apartments/slums2,
+/obj/item/key/apartments/slums3,
+/obj/item/key/apartments/slums4,
+/obj/item/key/apartments/slums5,
+/obj/item/key/apartments/slums6,
 /turf/open/floor/wood,
 /area/rogue/indoors/town/steward)
 "swU" = (
@@ -30796,6 +30815,11 @@
 	pixel_y = 32
 	},
 /obj/machinery/light/fueled/wallfire/candle/r,
+/obj/item/key/captain,
+/obj/item/key/manor,
+/obj/item/key/merchant,
+/obj/item/key/vault,
+/obj/item/key/courtphys,
 /turf/open/floor/carpet/purple,
 /area/rogue/indoors/town/steward)
 "tSr" = (
