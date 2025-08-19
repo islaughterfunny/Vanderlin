@@ -69,7 +69,6 @@
 	return ..()
 
 /obj/item/needle/pre_attack(atom/A, mob/living/user, params)
-	/obj/item/needle/pre_attack(atom/A, mob/living/user, params)
     if(!can_repair)
         to_chat(user, span_warning("[src] cannot be used to repair clothes!"))
         return TRUE
