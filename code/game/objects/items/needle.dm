@@ -185,6 +185,6 @@
 
 /obj/item/needle/blessed
 	name = "blessed needle"
-	desc = "<span class='hierophant'>A needle blessed by the ordained prestrans of the Church. A coveted item.</span>"
+	desc = "<span class='hierophant'>A needle blessed by the ordained pestrans of the Church. A coveted item.</span>"
 	infinite = TRUE
-	can_repair = FALSE
+	can_repair = TRUE
