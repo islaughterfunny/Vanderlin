@@ -69,9 +69,9 @@
 	return ..()
 
 /obj/item/needle/pre_attack(atom/A, mob/living/user, params)
-    if(!can_repair)
-        to_chat(user, span_warning("[src] cannot be used to repair clothes!"))
-        return TRUE
+	if(isitem(A) && !can_repair)
+		to_chat(user, span_warning("[src] cannot be used to repair [A]!"))
+		return TRUE
 	if(isitem(A) && can_repair)
 		var/obj/item/I = A
 		if(!(I.obj_flags & CAN_BE_HIT) && !istype(A, /obj/item/storage)) // to preserve old attack_obj behavior
